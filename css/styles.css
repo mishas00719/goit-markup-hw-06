@@ -51,6 +51,11 @@ address {
 img {
   display: block;
 }
+input, label {
+  display: block;
+  border: none;
+  outline: none;
+}
 .icon {
  fill: currentColor;
 }
@@ -102,8 +107,7 @@ img {
 }
 .header .container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  height: 72px;
 }
 .page-nav {
   display: flex;
@@ -130,8 +134,10 @@ img {
   letter-spacing: 0.02em;
   line-height: 1.5;
   padding: 24px 0;
-  display: block;
-  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
@@ -140,23 +146,26 @@ img {
   color: #404bbf;
 }
 .current::after {
+  margin-top: 20px;
   position: absolute;
   left: 0;
   bottom: -1px;
   content: "";
-  width: 100%;
+  width: 48px;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
 }
 
 .page-address {
-  
+  display: flex;
 }
 .address-list {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-right: 78px;
+  margin-left: 210px;
   
 }
 .address_link {
@@ -186,6 +195,11 @@ img {
   max-width: 1440px;
   background-position: center;
   margin: auto;
+}
+@media (min-resolution: 192dpi) {
+  .box {
+    background-image: url("../images/hero_bg@x2.jpg");
+  }
 }
 
 .hero .container {
@@ -687,7 +701,7 @@ margin-bottom: 8px;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
-  display: block;
+  
 }
 .modal-input:focus,
 .modal-input:hover {
@@ -700,7 +714,7 @@ margin-bottom: 8px;
   padding: 8px 16px;
   margin-top: 4px;
   resize: none;
-  display: block;
+  
   outline: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
