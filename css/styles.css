@@ -79,9 +79,9 @@ input, label {
   list-style: none;
 }
 .container {
-  width: 1158px;
-  padding: 0 15px;
-  margin: auto;
+  /*max-width: 1158px;*/
+  padding: 0 10px;
+  margin: 0 auto;
 }
 .page-nav .logo {
   margin-right: 76px;
@@ -107,21 +107,21 @@ input, label {
 }
 .header .container {
   display: flex;
-  height: 72px;
+  justify-content: space-between;
 }
 .page-nav {
   display: flex;
   align-items: center;
 }
 .nav-list {
-  display: flex;
-  margin: auto;
+  display: none;
+  /*margin: auto;
   gap: 40px;
   margin-right: auto;
-  position: relative;
+  position: relative; */
 }
 .nav_item {
-  margin-right: auto;
+  display: none;
 }
 
 .link:hover,
@@ -140,6 +140,79 @@ input, label {
   flex-direction: column;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+}
+
+.menu-open-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+.menu-open-icon {
+  fill: transparent;
+  stroke: var(--herobackground);
+}
+.mob-menu .modal-close-btn {
+  background-color: var(--whitebackground);
+}
+.mob-menu {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  padding: 80px 25px 25px 15px;
+  background-color: var(--whitebackground);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+.mob-menu > .modal-close-btn {
+  margin-bottom: 32px;
+}
+
+.mob-nav-list {
+  margin-bottom: 100px;
+}
+
+.mob-nav-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-contact-list {
+  margin-bottom: 48px;
+}
+
+.mob-contact-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-nav-link {
+  font-family: inherit;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--primary-dark-color);
+}
+
+.mob-contact-tel {
+  color: var(--brand-color);
+}
+
+.mob-contact-mail {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.mob-menu .social-links {
+  justify-content: normal;
+  gap: 30px;
 }
 
 .current {
@@ -161,19 +234,19 @@ input, label {
   display: flex;
 }
 .address-list {
-  display: flex;
+ /* display: flex;
   align-items: center;
   gap: 40px;
   margin-right: 78px;
-  margin-left: 210px;
+  margin-left: 210px;*/
   
 }
 .address_link {
-  color: var(--textcolor);
+ /* color: var(--textcolor);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 .address_link:hover,
 .address_link:active,
@@ -199,8 +272,8 @@ input, label {
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .box {
-    background-image: linear-gradient 
-    (rgba(46, 47, 66, 0.7), 
+    background-image: linear-gradient (
+      rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7) ),
     url(../images/hero-mob-bg@x2.jpg);
   }
@@ -254,8 +327,8 @@ input, label {
 }
 
 .advantages-section .card {
-  align-items: center;
-  min-width: 264px;
+ /* align-items: center;
+  /*min-width: 264px; */
 }
 
 .advantages_icon-box {
@@ -285,7 +358,7 @@ input, label {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--textcolor);
-  font-weight: 400;
+  /*font-weight: 400;*/
 }
 .section-header {
   font-size: 36px;
@@ -301,8 +374,8 @@ input, label {
   display: none;
 }
 .card-set {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
 }
 
 .section-doing .card-set {
@@ -386,6 +459,7 @@ input, label {
 }
 .customer-section .card {
   width: calc((100% - 24px) / 2);
+  gap: 24px;
 }
 .customer-section .card {
   height: 88px;

@@ -1,8 +1,21 @@
 @media screen and (min-width: 428px) {
   .container {
-    max-width: 398px;
-    padding: 0 15px;
+    max-width: 428px;
+    padding: 0 16px;
   }
+  .mob-menu {
+    padding: 80px 40px 40px 35px;
+  }
+
+  .mob-menu .social-links {
+    justify-content: normal;
+    gap: 56px;
+  }
+
+  .mob-nav-link {
+    font-size: 36px;
+  }
+
   .section-doing {
     display: none;
   }
@@ -58,14 +71,51 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .advantages-section .card {
     min-width: 500px;
   }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
   .advantages-section .card {
     flex-basis: calc((100% - 24px) / 2);
   }
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+  .address_link {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: var(--herobackground);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .page-address {
+    display: flex;
+  }
 
   .section-doing {
+    display: none;
+  }
+
+  .mob-menu {
+    display: none;
+  }
+
+  .menu-open-btn {
+    display: none;
+  }
+
+  .menu-open-icon {
     display: none;
   }
   .team-section .card-set {
@@ -79,6 +129,12 @@
   }
   .customer-section .card {
     width: calc((100% - 2 * 24px) / 3);
+  }
+  .card-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
   }
   .flex-box {
     flex-direction: row;
