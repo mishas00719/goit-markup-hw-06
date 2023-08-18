@@ -1,254 +1,354 @@
 @media screen and (min-width: 428px) {
-  .container {
-    max-width: 428px;
-    padding: 0 16px;
-  }
-  .mob-menu {
-    padding: 80px 40px 40px 35px;
-  }
+    .container {
+        max-width: 426px;
+    }
 
-  .mob-menu .social-links {
-    justify-content: normal;
-    gap: 56px;
-  }
+    /*------------HEADER-----------*/
+    /*------------MENU-----------*/
+    .mob-tel {
+        font-size: 36px;
+    }
 
-  .mob-nav-link {
-    font-size: 36px;
-  }
+    .mob-menu-contacts {
+        gap: 56px;
+    }
 
-  .section-doing {
-    display: none;
-  }
-  .team-section .container {
-    padding-left: 66px;
-    padding-right: 66px;
-  }
-  .team-section .card-img {
-    max-width: 264px;
-  }
-  .footer-subc-box {
-    width: 100%;
-  }
+    /*------------HERO-----------*/
+    .hero-name {
+        font-size: 36px;
+    }
+
+    .footer-reg-input {
+        width: 398px;
+    }
+
+    /*------------PORTFOLIO-----------*/
+    .cards-names {
+        font-size: 20px;
+    }
+
+    /*------------BACKDROP-----------*/
+    .modal {
+        width: 392px;
+    }
+
+    .modal-form-input {
+        width: 360px;
+    }
+
+    .modal-form-textarea {
+        width: 360px;
+    }
 }
+
+/*-------------------------------TABLET---------------------------*/
+
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 738px;
-  }
-  .hero {
-    background-color: var(--herobackground);
-    padding: 112px 0;
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7) rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-mob-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 1440px;
-    background-position: center;
-    margin: auto;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .box {
-      background-color: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/hero-tab-bg@x2.jpg);
+    .container {
+        max-width: 766px;
     }
-  }
-  .hero-header {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    margin-bottom: 36px;
-  }
 
-  .advantages-section .card-set {
-    gap: 72px 24px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .advantages-section .card {
-    min-width: 500px;
-  }
-  .nav-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-
-  .advantages-section .card {
-    flex-basis: calc((100% - 24px) / 2);
-  }
-  .address-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 12px;
-  }
-  .address_link {
-    display: block;
-    font-size: 12px;
-    font-style: normal;
-    line-height: 1.16;
-    letter-spacing: 0.04em;
-    color: var(--herobackground);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .page-address {
-    display: flex;
-  }
-
-  .section-doing {
-    display: none;
-  }
-
-  .mob-menu {
-    display: none;
-  }
-
-  .menu-open-btn {
-    display: none;
-  }
-
-  .menu-open-icon {
-    display: none;
-  }
-  .team-section .card-set {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .team-section .card {
-    width: calc((100% - 24px) / 2);
-    gap: 64px 24px;
-  }
-  .customer-section .card {
-    width: calc((100% - 2 * 24px) / 3);
-  }
-  .card-set {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 72px;
-  }
-  .flex-box {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-    padding-left: 108px;
-    gap: 72px 24px;
-    justify-content: left;
-  }
-  .footer-form {
-    align-items: left;
-  }
-  .footer-form {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 24px;
-  }
-  .footer-input {
-    width: 264px;
-  }
-  .footer-subc-title {
-    text-align: left;
-  }
-  .footer-subc-box {
-    width: 453px;
-  }
-}
-
-@media screen and (min-widht: 1158px) {
-  .container {
-    max-width: 1128px;
-  }
-  .hero {
-    background-color: var(--herobackground);
-    padding: 118px 0;
-    background-image: linear-gradient(
-        rgba (46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero_bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 1440px;
-    background-position: center;
-    margin: auto;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .box {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/hero_bg@x2.jpg);
+    /*------------HEADER-----------*/
+    .menu {
+        display: flex;
     }
-  }
 
-  .advantages-section .card-set {
-    flex-direction: row;
-    gap: 24px;
-  }
-  .advantages-section .card_subtitle {
-    font-weight: 400;
-  }
-  .advantages_icon-box {
-    display: flex;
-  }
+    .menu-open-btn {
+        display: none;
+    }
 
-  .section-doing {
-    display: flex;
-  }
-  .section-doing .card-set {
-    gap: 24px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .section-doing .card {
-    width: calc((100% - 2 * 24px) / 3);
-  }
-  .team-section .card {
-    flex-basis: calc((100% - 3 * 24px) / 4);
-  }
-  .team-section .container {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .customer-section .card-set {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-  .customer-section .card {
-    width: calc((100% - 24px) / 2);
-    gap: 24px;
-  }
-  .customer-section .card {
-    width: calc((100% - 5 * 24px) / 6);
-  }
-  .footer .container {
-    padding: 0px;
-  }
-  .flex-box {
-    gap: 0px;
-  }
-  .footer-box {
-    margin-right: 120px;
-    align-items: baseline;
-    display: flex;
-  }
-  .footer-soc-box {
-    margin-right: 80px;
-    align-items: baseline;
-    display: flex;
-  }
-}
+    .current::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        border-radius: 2px;
+        background-color: var(--presssed-state);
+    }
+
+    .menu-contacts {
+        display: flex;
+        gap: 12px;
+    }
+        /*------------HERO-----------*/
+        .hero-name {
+            font-size: 56px;
+            line-height: 1.07;
+            max-width: 496px;
+            margin-bottom: 36px;
+        }
+    
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero-tab-bg.jpg);
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/hero-tab-bg@2x.jpg);
+            }
+        }
+    
+        /*------------SECTION1-----------*/
+        .advanced-list {
+            padding: 0;
+            gap: 72px 24px;
+        }
+    
+        .item-list {
+            width: calc((100% - 24px) / 2);
+        }
+    
+        .advanced-header {
+            text-align: left;
+        }
+    
+        /*------------SECTION3-----------*/
+        .team-list {
+            gap: 64px 24px;
+        }
+    
+        /*------------SECTION4-----------*/
+        .customers-icon-list {
+            gap: 72px 24px;
+        }
+    
+        .customers-icon-item {
+            width: calc((100% - 48px) / 3);
+        }
+    
+        .tab-container {
+            max-width: 582px;
+        }
+    
+        /*------------FOOTER-----------*/
+        .footer-container {
+            gap: 72px 24px;
+        }
+    
+        .logo-footer {
+            justify-content: flex-start;
+        }
+    
+        .footer-container {
+            justify-content: flex-start;
+        }
+    
+        .footer-text {
+            max-width: 264px;
+        }
+    
+        .footer-social {
+            align-items: flex-start;
+        }
+    
+        .footer-reg-title {
+            text-align: left;
+        }
+    
+        .footer-form {
+            flex-direction: row;
+        }
+    
+        .footer-form {
+            gap: 24px;
+        }
+    
+        .footer-reg-input {
+            width: 264px;
+        }
+    
+        /*------------PORTFOLIO-----------*/
+        .portfolio {
+            padding-top: 64px;
+            padding-bottom: 96px;
+        }
+    
+        .menu-list {
+            justify-content: center;
+            margin-bottom: 72px;
+        }
+    
+        .list-btn {
+            padding: 12px 24px;
+        }
+    
+        .cards-item {
+            width: calc((100% - 24px) / 2);
+        }
+    
+        .cards {
+            row-gap: 72px;
+        }
+    
+        .list-container {
+            max-width: 766px;
+        }
+    
+        /*------------BACKDROP-----------*/
+        .modal {
+            width: 408px;
+            padding: 72px 24px 24px 24px;
+        }
+        }
+    
+        /*-------------------------------LAPTOP---------------------------*/
+    
+        @media screen and (min-width: 1440px) {
+            .container {
+                max-width: 1158px;
+            }
+    
+            /*------------HEADER-----------*/
+            .menu {
+                display: flex;
+            }
+    
+            .logo-header {
+                margin-right: 76px;
+            }
+    
+            .mail-normal {
+                padding: 24px 0;
+            }
+    
+            .menu-contacts {
+                flex-direction: row;
+                gap: 40px;
+            }
+    
+            .contacts {
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.02em;
+            }
+    
+            /*------------HERO-----------*/
+            .hero {
+                padding: 188px 0;
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/hero_bg.jpg);
+            }
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .hero {
+                    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                            rgba(46, 47, 66, 0.7)),
+                        url(../images/hero_bg@2x.jpg);
+                }
+            }
+    
+            .hero-name {
+                margin-bottom: 48px;
+            }
+    
+            /*------------SECTION1-----------*/
+            .advanced {
+                padding: 120px 0;
+            }
+    
+            .advanced-list {
+                gap: 24px;
+            }
+    
+            .item-list {
+                width: calc((100% - 72px) / 4);
+            }
+    
+            .advanced-item-top {
+                display: flex;
+            }
+    
+            .advanced-header {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.2;
+            }
+    
+            .advanced-text {
+                font-weight: 400;
+            }
+    
+            /*------------SECTION2-----------*/
+            .acting {
+                padding-bottom: 120px;
+                display: block;
+            }
+    
+            .acting-list {
+                display: flex;
+                gap: 24px;
+            }
+    
+            .acting-item {
+                width: calc((100% - 48px) / 3);
+            }
+    
+            /*------------SECTION3-----------*/
+            .team-list {
+                gap: 24px;
+            }
+    
+            .team-back {
+                width: calc((100% - 72px) / 4);
+            }
+    
+            /*------------SECTION4-----------*/
+            .customers {
+                padding: 120px 0;
+            }
+    
+            .customers-icon-item {
+                width: calc((100% - 120px) / 6);
+            }
+    
+            /*------------FOOTER-----------*/
+            .footer {
+                padding: 100px 0;
+            }
+    
+            .footer-container {
+                gap: 0;
+            }
+    
+            .footer-descr {
+                margin-right: 120px;
+            }
+    
+            .footer-registration {
+                margin-left: 80px;
+            }
+    
+            .footer-reg-input {
+                opacity: 1;
+            }
+    
+            /*------------PORTFOLIO-----------*/
+            .portfolio {
+                padding-top: 100px;
+                padding-bottom: 120px;
+            }
+    
+            .cards-item {
+                width: calc((100% - 48px) / 3);
+            }
+    
+            .cards {
+                row-gap: 48px;
+            }
+    
+            .list-container {
+                max-width: 1158px;
+            }
+        }
