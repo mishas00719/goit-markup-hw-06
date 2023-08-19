@@ -41,9 +41,16 @@
     }
 }
 
-/*-------------------------------TABLET---------------------------*/
+/*------------TABLET-------------*/
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .team-section .container,
+    .customers-section .container,
+    .footer-section .container {
+      max-width: 584px;
+    }
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) { 
     .container {
         max-width: 766px;
     }
@@ -52,6 +59,11 @@
     .menu {
         display: flex;
     }
+    .team {
+      
+      padding: 96px 0;
+        }
+    
 
     .menu-open-btn {
         display: none;
@@ -200,11 +212,12 @@
         }
         }
     
-        /*-------------------------------LAPTOP---------------------------*/
+        /*------------LAPTOP------------*/
     
-        @media screen and (min-width: 1440px) {
+        @media screen and (min-width: 1158px) {
             .container {
                 max-width: 1158px;
+                padding: 0 15px;
             }
     
             /*------------HEADER-----------*/
@@ -217,7 +230,7 @@
             }
     
             .mail-normal {
-                padding: 24px 0;
+              align-items: center;  
             }
     
             .menu-contacts {
@@ -250,7 +263,7 @@
             }
     
             .hero-name {
-                margin-bottom: 48px;
+                margin-bottom: 40 auto 48px auto;
             }
     
             /*------------SECTION1-----------*/
